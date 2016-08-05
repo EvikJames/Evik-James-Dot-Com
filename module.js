@@ -4,5 +4,6 @@
 angular.module('evikjamesApp', [
 	'ngRoute',
 	'showProfile',
-	'showVideo'
+	'showVideo',
+	'showExperience'
 ]);

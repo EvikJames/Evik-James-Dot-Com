@@ -7,6 +7,9 @@ angular.
           when('/profile', {
             template: '<show-profile></show-profile>'
           }).
+          when('/experience', {
+            template: '<show-experience></show-experience>'
+          }).
           when('/video', {
             template: '<show-video></show-video>'
         }).
