@@ -1,10 +1,12 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
-		<ul>
-			<li ng-repeat="video in $ctrl.videos">
-				<span>{{video.name}}</span>
-				<p>{{video.snippet}}</p>
-			</li>
-		</ul>
+
+		<div ng-repeat="video in $ctrl.videos">
+			<span>{{video.name}}</span>
+			<span>{{video.videoid}}</span>
+			<iframe type="text/html" width="400" height="300" 
+				ng-src="{{video.videoid | trustUrl}}" frameborder="0" allowfullscreen></iframe>			
+		</div>
+
 	</div>
 </div>

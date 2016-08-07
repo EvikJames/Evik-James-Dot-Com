@@ -7,6 +7,8 @@ angular.
 
     controller: function ShowExperienceController() {
       this.experiences = [
+
+        /* NEW BAY MEDIA */
         {
           company: 'NewBay Media - AV-iQ',
           title: 'Senior Web Developer ~ Minneapolis, MN',
@@ -36,7 +38,10 @@ angular.
             'Used Google Analytics to monitor web site tool usage and make informed changes.',
             'Helped migrate development team to use scrum.'
           ]
-        }, {
+        },
+
+        /* JR WATKINS */
+        {
           company: 'J.R.Watkins',
           title: 'Senior Web Developer ~ Winona, MN',
           daterange: 'September 2011 - January 2012',
@@ -54,7 +59,10 @@ angular.
             'Wrote dozens of user defined functions to create form elements programmatically to minimize duplicate coding effort and increase productivity.',
             'Ensured web site scalability by using OOP best practices, moving all database interaction into relevant CFCs.'
           ]
-        }, {
+        }, 
+
+        /* STATE OF MINNESOTA - DEPARTMENT OF HEALTH */
+        {
           company: 'State of MN Department of Health',
           title: 'Senior Web Developer ~ Saint Paul, MN',
           daterange: 'January 2011 - July 2011',
@@ -69,7 +77,91 @@ angular.
             'Used jQuery extensively for form validation as well as showing and hiding relevant information and options.',
             'Used Ajax calls to save form data and retrieve data without leaving current page, creating a smooth user experience.'
           ]  
-        }
+        },
+
+        /* PALE MOON WEB SERVICES */
+        {
+          company: 'Pale Moon Web Services - Minneapolis, MN',
+          title: 'Senior Web Developer - Webmaster',
+          daterange: 'January 2006 - December 2010',
+          keytech: [
+            'ColdFusion',
+            'JavaScript',
+            'Postgrest 8'
+          ],
+          duties: [
+            'Hand-coded small and large web sites in HTML, DHTML, CSS, and CFML using UltraEdit 16 and ColdFusion 9.',
+            'Made extensive use of client-side JavaScript for complex form validation.',
+            'Connected many web sites to Microsoft Access 2000 or SQL Server databases.',
+            'Normalized databases for maximum efficiency dependent on server resources and expected traffic.',
+            'Collected data through online forms and populated databases.',
+            'Used CFMail to confirm opt-in programs, send thank-you\'s, and distribute reports.',
+            'Develop SEO strategies using Google AdWords and Webmaster Tools, along with creating dynamic XML sitemaps.',
+            'Edit images and incorporate clip art using Adobe PhotoShop 7.',
+            'Create image galleries using Adobe Flash CS5.'
+          ]  
+        },
+
+
+        /* CAPISTAR */
+        {
+          company: 'Capistar Franchise Holdings - Eden Prairie, MN',
+          title: 'Senior Web Developer - Webmaster',
+          daterange: 'March 2000 - January 2006',
+          keytech: [
+            'ColdFusion',
+            'JavaScript',
+            'Postgrest 8'
+          ],
+          duties: [
+            'Designed and hand-coded several public web sites using ColdFusion 4/5 to collect new customer information (leads) and populate Microsoft Access and SQL Server 2000 databases.',
+            'Developed intranet for local executive staff to create and manage intranet accounts for 120 remote consultants, allowing the local executive staff to distribute leads to the consultants and report on lead generation trends.',
+            'Implemented numerous applications for third-party vendors to distribute leads to us via RSS, XML, email, automatically parsing leads and populating the database.',
+            'Created an application to specify multiple consultant lead preferences and used the data to automatically allocate incoming lead to the most appropriate consultant, fully respective of monthly lead count.',
+            'Created an application to automatically pull data from database and create PDF for a consultant\'s biography and image and to distribute as an email to lead in real time.',
+            'Developed an extranet for business relations to upload logos and manage their own information.',
+            'I partnered with the marketing department to assist in search engine optimization strategies.'
+          ]  
+        },
+
+        /* ABRA AUTO BODY AND GLASS */
+        {
+          company: 'ABRA Auto Body & Glass - Brooklyn Center, MN',
+          title: 'Telecom Analyst - Intranet Developer',
+          daterange: 'January 1999 - March 2000',
+          keytech: [
+            'ColdFusion',
+            'JavaScript',
+            'Postgrest 8'
+          ],
+          duties: [
+            'Monitored all landline and cell phone operations of entire enterprise, 90 locations in 7 states.',
+            'Implemented a web-based solution to track phone lines, services, and costs powered by ColdFusion 3 and Microsoft Access.',
+            'Integrated AT&T\'s Route-It! toll-free call routing software to create toll-free traffic management system within our network.',
+            'Helped research possible VoIP telephone system solution for entire enterprise.',
+            'Advised executive staff on new call center configuration scope, phone system, and traffic management possibilities.'
+          ]  
+        },
+
+        /* FINGERHUT */
+        {
+          company: 'Fingerhut Companies - Plymouth, MN',
+          title: 'Senior Network Traffic Analyst / Intranet Developer',
+          daterange: 'June 1996 - December 1998',
+          keytech: [
+            'AT&T Route-It!',
+            'Microsoft Access',
+            'ColdFusion 4'
+          ],
+          duties: [
+            'Monitored all landline and cell phone operations of entire enterprise, 90 locations in 7 states.',
+            'Implemented a web-based solution to track phone lines, services, and costs powered by ColdFusion 3 and Microsoft Access.',
+            'Integrated AT&T\'s Route-It! toll-free call routing software to create toll-free traffic management system within our network.',
+            'Helped research possible VoIP telephone system solution for entire enterprise.',
+            'Advised executive staff on new call center configuration scope, phone system, and traffic management possibilities.'
+          ]  
+        },
+
       ];
 
     }
