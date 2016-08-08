@@ -2,10 +2,10 @@
 
 // Define the `phonecatApp` module
 angular.module('evikjamesApp', [
+	'core',
 	'ngRoute',
-	'ngYoutubeEmbed', 
+	'showExperience',
 	'showProfile',
 	'showVideo',
-	'showVideoDetail',
-	'showExperience'
+	'showVideoDetail'
 ]);

@@ -41,7 +41,11 @@ angular.
 
     }
 
-  })  .filter('videoUrl', videoUrl);
+  });
+
+
+/*
+    .filter('videoUrl', videoUrl);
 
       videoUrl.$inject = ['$sce'];
 
@@ -52,5 +56,4 @@ angular.
         }
       }
 
-
-;
+      */

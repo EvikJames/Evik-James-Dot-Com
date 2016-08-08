@@ -1,17 +1,23 @@
 'use strict';
 
-angular.
-  module('showVideoDetail').component('showVideoDetail', {
+angular.module('showVideoDetail').component('showVideoDetail', {
+ 
     templateUrl: 'show-video-detail/show-video-detail.template.html',
     controller: ['$routeParams',
-		function ShowVideoDetailController($routeParams) {
-			this.videoid = $routeParams.videoid;
-		}
-      ];
 
-    }
+  		function ShowVideoDetailController($routeParams) {
 
-  })  .filter('videoUrl', videoUrl);
+	   		this.videoid = $routeParams.videoid;
+
+  		}
+    ],
+
+});
+
+// videoUrl.$inject = ['$sce'];
+
+/*
+  .filter('videoUrl', videoUrl);
 
       videoUrl.$inject = ['$sce'];
 
@@ -21,6 +27,4 @@ angular.
           return $sce.trustAsResourceUrl('http://www.youtube.com/embed/' + videoid);
         }
       }
-
-
-;
+*/
