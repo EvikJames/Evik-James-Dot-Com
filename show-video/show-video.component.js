@@ -7,45 +7,33 @@ angular.
       this.videos = [
 
           {
-            name: 'Rush - Kid Gloves - Guitar Solo Cover - 50% speed',
-            videourl: 'https://www.youtube.com/watch?v=c-8OsVuqoCg',
-            videoid: 'c-8OsVuqoCg',
-            thumbnail: 'http://img.youtube.com/vi/c-8OsVuqoCg/hqdefault.jpg'          
+            title: 'Rush - Kid Gloves - Guitar Solo Cover - 50% speed',
+            videoid: 'c-8OsVuqoCg'
           }, 
 
           {
-            name: 'Van Halen - Unchained - Guitar Cover',
-            videourl: 'https://www.youtube.com/watch?v=Z9n0oIBz8SE',
-            videoid: 'Z9n0oIBz8SE',
-            thumbnail: 'http://img.youtube.com/vi/Z9n0oIBz8SE/hqdefault.jpg'          
+            title: 'Van Halen - Unchained - Guitar Cover',
+            videoid: 'Z9n0oIBz8SE'
           }, 
 
           {
-            name: 'Extreme - More Than Words - Guitar Cover',
-            videourl: 'https://www.youtube.com/watch?v=gMJcE4kWelE',
-            videoid: 'gMJcE4kWelE',
-            thumbnail: 'http://img.youtube.com/vi/gMJcE4kWelE/hqdefault.jpg'
+            title: 'Extreme - More Than Words - Guitar Cover',
+            videoid: 'gMJcE4kWelE'
           },
 
           {
-            name: 'Sublime - Santeria - Guitar Solo Cover - 50% speed',
-            videourl: 'https://www.youtube.com/watch?v=mN2uFaZ2Sgs',
-            videoid: 'mN2uFaZ2Sgs',
-            thumbnail: 'http://img.youtube.com/vi/mN2uFaZ2Sgs/hqdefault.jpg'
+            title: 'Sublime - Santeria - Guitar Solo Cover - 50% speed',
+            videoid: 'mN2uFaZ2Sgs'
           },
 
           {
-            name: 'Rush - La Villa Strangiato - Guitar Cover',
-            videourl: 'https://www.youtube.com/watch?v=MRZPG58hTQg',
-            videoid: 'MRZPG58hTQg',
-            thumbnail: 'http://img.youtube.com/vi/MRZPG58hTQg/hqdefault.jpg'
+            title: 'Rush - La Villa Strangiato - Guitar Cover',
+            videoid: 'MRZPG58hTQg'
           },
 
           {
-            name: 'Eagles - One of these Nights - Guitar Solo Cover',
-            videourl: 'https://www.youtube.com/watch?v=LhJgO2LYDcU',
-            videoid: 'LhJgO2LYDcU',
-            thumbnail: 'http://img.youtube.com/vi/LhJgO2LYDcU/hqdefault.jpg'
+            title: 'Eagles - One of these Nights - Guitar Solo Cover',
+            videoid: 'LhJgO2LYDcU'
           }
 
       ];
@@ -53,14 +41,14 @@ angular.
 
     }
 
-  })  .filter('trustUrl', trustUrl);
+  })  .filter('videoUrl', videoUrl);
 
-      trustUrl.$inject = ['$sce'];
+      videoUrl.$inject = ['$sce'];
 
-      function trustUrl($sce) {
-        return function(videoId) {
-          if (!videoId) return;
-          return $sce.trustAsResourceUrl('http://www.youtube.com/embed/' + videoId);
+      function videoUrl($sce) {
+        return function(videoid) {
+          if (!videoid) return;
+          return $sce.trustAsResourceUrl('http://www.youtube.com/embed/' + videoid);
         }
       }
 

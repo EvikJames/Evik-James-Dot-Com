@@ -67,7 +67,10 @@ img {
 	text-align: center;
 }
 
-
+.videothumb {
+	width: 33.33%;
+	float: left;
+}
 
 @media only screen 
 	and (min-width : 200px) 	

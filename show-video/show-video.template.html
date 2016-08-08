@@ -1,11 +1,31 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
 
-		<div ng-repeat="video in $ctrl.videos">
-			<span>{{video.name}}</span>
-			<span>{{video.videoid}}</span>
+		<div ng-repeat="video in $ctrl.videos" class="videothumb">
+			<a href="#!/video-detail/{{video.videoid}}"><img ng-src="http://img.youtube.com/vi/{{video.videoid}}/hqdefault.jpg"></a>	
+		</div>	
+
+		<!---		
+			<div ng-repeat="video in $ctrl.videos">
+				<span>{{video.title}}</span> <br>
+				<span>{{video.videoid}}</span> <br>
+				<span>{{video.thumbnail}}</span> <br>
+		--->
+
+			<!--
+			<img src="http://img.youtube.com/vi/{{video.thumbnail}}hqdefault.jpg">	
+		-->
+			
+
+			<!--
+			<img src="http://img.youtube.com/vi/{{video.thumbnail}}hqdefault.jpg">	
+
+			<img src="{{video.thumbnail}}" width="50px" />
 			<iframe type="text/html" width="400" height="300" 
-				ng-src="{{video.videoid | trustUrl}}" frameborder="0" allowfullscreen></iframe>			
+				ng-src="{{video.videoid | videoUrl}}" frameborder="0" allowfullscreen></iframe>
+		-->
+
+
 		</div>
 
 	</div>

@@ -6,5 +6,6 @@ angular.module('evikjamesApp', [
 	'ngYoutubeEmbed', 
 	'showProfile',
 	'showVideo',
+	'showVideoDetail',
 	'showExperience'
 ]);

@@ -12,6 +12,9 @@ angular.
           }).
           when('/video', {
             template: '<show-video></show-video>'
+          }).
+          when('/video-detail/:videoid', {
+            template: '<show-video-detail></show-video-detail>'
         }).
         otherwise('/profile');
       }
