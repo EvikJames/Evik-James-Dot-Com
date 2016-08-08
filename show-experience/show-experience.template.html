@@ -1,9 +1,10 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
-		<div ng-repeat="experience in $ctrl.experiences"> 
-			{{experience.company}} <br>
-			{{experience.daterange}} <br>
-			{{experience.title}} <br>
+		<div ng-repeat="experience in $ctrl.experiences">
+			<h2>{{experience.company}}</h2> 
+			<h4><em>{{experience.title}}</em></h4>
+			<small>{{experience.daterange}}</small>
+			
 			<ul ng-repeat="duty in experience.duties">
 				<li>{{duty}}</li>
 			</ul>

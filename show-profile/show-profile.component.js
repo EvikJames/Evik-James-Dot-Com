@@ -1,21 +1,42 @@
 'use strict';
 
-angular.
-  module('showProfile').
-    component('showProfile', {
-    templateUrl: 'show-profile/show-profile.template.html',
-    controller: function ShowProfileController() {
-      this.phones = [
+angular.module('showProfile').component('showProfile', {
+  templateUrl: 'show-profile/show-profile.template.html',
+  controller: function ShowProfileController() {
+     this.thingsthatiam = [
         {
-          name: 'Nexus S',
-          snippet: 'Fast just got faster with Nexus S.'
-        }, {
-          name: 'Motorola XOOM™ with Wi-Fi',
-          snippet: 'The Next, Next Generation tablet.'
-        }, {
-          name: 'MOTOROLA XOOM™',
-          snippet: 'The Next, Next Generation tablet.'
-        }
-      ];
-    }
-  });
+          trait: 'A human'
+        },
+        {
+          trait: 'A man'
+        },
+        {
+          trait: 'A son'
+        },
+        {
+          trait: 'A brother'
+        },
+        {
+          trait: 'A husband'
+        },
+        {
+          trait: 'A friend to many'
+        },
+        {
+          trait: 'A web developer'
+        },
+        {
+          trait: 'A guitarist'
+        },
+        {
+          trait: 'A bicyclist'
+        },
+        {
+          trait: 'A movie buff'
+        },
+        {
+          trait: 'An animal caregiver'
+        },
+    ];
+  }
+});

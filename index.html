@@ -13,17 +13,30 @@
 	<meta name="google-site-verification" content="tU3k4fIOr7DkCmraVlroDoAC23hLe-0kMFzMxyYkx2I" />
 	<meta name="msvalidate.01" content="89BA19CD99164CC12E5393547474D501" />
 
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<link rel="stylesheet" href="app.animations.css" />
+
+
+	<!-- GET JQUERY -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 	<!-- GET ANGULAR -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<!-- GET ANGULAR ROUTE -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
 
 	<!-- GET MY APP JS -->
 	<script src="app.module.js"></script>	
 	<script src="app.config.js"></script>
+
 
 	<script src="core/core.module.js"></script>
 	<script src="core/youtubeurl/youtubeurl.filter.js"></script>
@@ -50,10 +63,10 @@
 	<div class="SectionHead TopBorder">
 		Evik James
 	</div>
-	<div class="SectionHead TopBorder">
-		<a href="#!/profile">Personal Profile</a> 
-		<a href="#!/experience">Professional Experience</a> 
-		<a href="#!/video">Video</a> 
+	<div class="SectionMenu TopBorder">
+		<a href="#!/profile" class="MainMenuLink">Personal Profile</a> - 
+		<a href="#!/experience" class="MainMenuLink">Professional Experience</a> -
+		<a href="#!/video" class="MainMenuLink">Guitar Videos</a> 
 	</div>
 
 	<div ng-view></div>

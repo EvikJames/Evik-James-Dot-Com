@@ -3,6 +3,7 @@
 // Define the `phonecatApp` module
 angular.module('evikjamesApp', [
 	'core',
+	'ngAnimate',
 	'ngRoute',
 	'showExperience',
 	'showProfile',
