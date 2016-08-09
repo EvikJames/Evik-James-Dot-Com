@@ -6,6 +6,7 @@ angular.module('evikjamesApp', [
 	'ngAnimate',
 	'ngRoute',
 	'showExperience',
+	'showExperienceDetail',
 	'showProfile',
 	'showVideo',
 	'showVideoDetail'

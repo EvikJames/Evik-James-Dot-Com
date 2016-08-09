@@ -1,7 +1,7 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
 
-		<div ng-repeat="experience in $ctrl.experiences" class="phone-list-item">
+		<div ng-repeat="experience in $ctrl.experience" class="phone-list-item">
 			<p><a ng-href="#!/experience-detail/{{experience.detailid}}">{{experience.company}}</a></p>
 			<ul>
 				<li>{{experience.title}}</li>
@@ -29,6 +29,24 @@
 			</ul>
 			<br>
 		</div>
+
+
+
+<div ng-repeat="user in _users | filter:{User.active:1}">
+        {{user.User.userid}}
+</div>
+
+/* from video detail */
+    controller: ['$routeParams',
+
+  		function ShowVideoDetailController($routeParams) {
+
+	   		this.videoid = $routeParams.videoid;
+
+  		}
+    ],
+
+
 		-->
 	</div>
 </div>
