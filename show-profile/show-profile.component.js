@@ -1,5 +1,6 @@
 'use strict';
 
+// extend the module - define the component
 angular.module('showProfile').component('showProfile', {
   templateUrl: 'show-profile/show-profile.template.html',
   controller: function ShowProfileController() {
@@ -21,6 +22,9 @@ angular.module('showProfile').component('showProfile', {
         },
         {
           trait: 'A friend to many'
+        },
+        {
+          trait: 'A cancer survivor'
         },
         {
           trait: 'A web developer'

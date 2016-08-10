@@ -1,5 +1,6 @@
 'use strict';
 
+// extend the module - define the component
 angular.module('showExperience').component('showExperience', {
 
   templateUrl: 'show-experience/show-experience.template.html',

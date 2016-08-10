@@ -1,6 +1,6 @@
 'use strict';
 
-// Define the `phonecatApp` module
+// define the module
 angular.module('evikjamesApp', [
 	'core',
 	'ngAnimate',
@@ -8,6 +8,7 @@ angular.module('evikjamesApp', [
 	'showExperience',
 	'showExperienceDetail',
 	'showProfile',
+	'showSkills',
 	'showVideo',
 	'showVideoDetail'
 ]);

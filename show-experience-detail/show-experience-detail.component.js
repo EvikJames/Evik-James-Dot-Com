@@ -1,5 +1,6 @@
 'use strict';
 
+// extend the module - define the component
 angular.module('showExperienceDetail').component('showExperienceDetail', {
 
     templateUrl: 'show-experience-detail/show-experience-detail.template.html',
@@ -21,7 +22,6 @@ angular.module('showExperienceDetail').component('showExperienceDetail', {
 	        		if (experienceid == $routeParams.experienceid) {
 					
 						self.experience = response.data[i];
-						// console.log(self.experience);
 						break;
 
 	        		}

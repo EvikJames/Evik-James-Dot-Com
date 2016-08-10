@@ -1,4 +1,4 @@
 'use strict';
 
 // define the module
-angular.module('showVideo', []);
+angular.module('showSkills', []);
