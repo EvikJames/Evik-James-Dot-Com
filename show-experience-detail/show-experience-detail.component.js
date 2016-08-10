@@ -6,9 +6,9 @@ angular.module('showExperienceDetail').component('showExperienceDetail', {
 
     controller: ['$http', '$routeParams',
 
-		function ShowExperienceDetailController($http) {
+		function ShowExperienceDetailController($http, $routeParams) {
 
-	        var self = this;
+			var self = this;
 
 	        $http.get('show-experience/show-experience.json').then(function(response) {
 
@@ -16,19 +16,17 @@ angular.module('showExperienceDetail').component('showExperienceDetail', {
 
 	        	for (var i = 0; i < self.experiences.length; i++) {
 
-	        		var detailid = self.experiences[i]["detailid"];
+	        		var experienceid = self.experiences[i]["experienceid"];
 
-	        		if (detailid == 'pale-moon-web') {
-						console.log(detailid);
+	        		if (experienceid == $routeParams.experienceid) {
+					
 						self.experience = response.data[i];
-						console.log(self.experience);
+						// console.log(self.experience);
 						break;
 
 	        		}
 
-
 	        	}
-
 
 	        });
 	    }

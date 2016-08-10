@@ -10,7 +10,7 @@ angular.
           when('/experience', {
             template: '<show-experience></show-experience>'
           }).
-          when('/experience-detail/:detailid', {
+          when('/experience-detail/:experienceid', {
             template: '<show-experience-detail></show-experience-detail>'
           }).
           when('/video', {

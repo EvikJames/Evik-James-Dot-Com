@@ -1,7 +1,7 @@
  [
 
   {
-    "detailid": "new-bay-media",
+    "experienceid": "new-bay-media",
     "company": "NewBay Media - AV-iQ",
     "title": "Senior Web Developer ~ Minneapolis, MN",
     "daterange": "January 2012 - Current",
@@ -34,7 +34,7 @@
    },
 
   {
-    "detailid": "j-r-watkins",
+    "experienceid": "j-r-watkins",
     "company": "J.R.Watkins",
     "title": "Senior Web Developer ~ Winona, MN",
     "daterange": "September 2011 - January 2012",
@@ -55,7 +55,7 @@
   } ,
 
     {
-      "detailid": "department-of-health",
+      "experienceid": "department-of-health",
       "company": "State of MN Department of Health",
       "title": "Senior Web Developer ~ Saint Paul, MN",
       "daterange": "January 2011 - July 2011",
@@ -73,7 +73,7 @@
     },
 
     {
-      "detailid": "pale-moon-web",
+      "experienceid": "pale-moon-web",
       "company": "Pale Moon Web Services - Minneapolis, MN",
       "title": "Senior Web Developer - Webmaster",
       "daterange": "January 2006 - December 2010",
@@ -97,7 +97,7 @@
 
 
     {
-      "detailid": "capistar-franchise-holdings",
+      "experienceid": "capistar-franchise-holdings",
       "company": "Capistar Franchise Holdings - Eden Prairie, MN",
       "title": "Senior Web Developer - Webmaster",
       "daterange": "March 2000 - January 2006",
@@ -118,7 +118,7 @@
     },
 
     {
-      "detailid": "abra-auto-body",
+      "experienceid": "abra-auto-body",
       "company": "ABRA Auto Body & Glass - Brooklyn Center, MN",
       "title": "Telecom Analyst - Intranet Developer",
       "daterange": "January 1999 - March 2000",
@@ -137,7 +137,7 @@
     },
 
     {
-      "detailid": "fingerhut",
+      "experienceid": "fingerhut",
       "company": "Fingerhut Companies - Plymouth, MN",
       "title": "Senior Network Traffic Analyst / Intranet Developer",
       "daterange": "June 1996 - December 1998",
