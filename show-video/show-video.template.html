@@ -1,32 +1,12 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
 
+		<p>I love the challenge of learning songs note for note on guitar. Here are a few
+			clips of some of the stuff I have learned in the last few months.</p>
+
 		<div ng-repeat="video in $ctrl.videos" class="videothumb phone-list-item">
 			<a href="#!/video-detail/{{video.videoid}}"><img ng-src="http://img.youtube.com/vi/{{video.videoid}}/hqdefault.jpg"></a>	
 		</div>	
-
-		<!---		
-			<div ng-repeat="video in $ctrl.videos">
-				<span>{{video.title}}</span> <br>
-				<span>{{video.videoid}}</span> <br>
-				<span>{{video.thumbnail}}</span> <br>
-		--->
-
-			<!--
-			<img src="http://img.youtube.com/vi/{{video.thumbnail}}hqdefault.jpg">	
-		-->
-			
-
-			<!--
-			<img src="http://img.youtube.com/vi/{{video.thumbnail}}hqdefault.jpg">	
-
-			<img src="{{video.thumbnail}}" width="50px" />
-			<iframe type="text/html" width="400" height="300" 
-				ng-src="{{video.videoid | videoUrl}}" frameborder="0" allowfullscreen></iframe>
-		-->
-
-
-		</div>
 
 	</div>
 </div>

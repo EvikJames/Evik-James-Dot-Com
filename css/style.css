@@ -4,13 +4,21 @@ html {
 body {
   	background: url("background-01.jpg") top left repeat fixed;
   	background-size: 100%;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-family: 'Dosis', sans-serif;
 	margin: 0;
 }
 
 img {
 	width: 100%;
+}
+
+a {
+	color: blue;
+}
+
+a:visited {
+	color: blue;
 }
 
 #PageWrapper {
@@ -28,7 +36,7 @@ img {
 .SectionHead {
 	font-family: 'Passion One', cursive;
 	background-color: rgba(255,255,255,.95);	
-	line-height: 150%;
+	/* line-height: 150%; */
 	font-size: 2em;
 	padding: 0 10px;
 	cursor: pointer;
@@ -47,7 +55,7 @@ img {
 	font-family: 'Passion One', cursive;
 	background-color: rgba(255,255,255,.85);
 	line-height: 150%;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	padding: 0 10px;
 	cursor: pointer;
 	border-bottom: 1px solid white;
@@ -62,24 +70,38 @@ img {
 .MainMenuLink {
 	color: white;	
 	text-decoration: none;
-	text-shadow: 3px 3px 3px BLACK;
+	text-shadow: 2px 2px 2px BLACK;
 }
 .MainMenuLink:hover {
 	transition: 0.25s linear all;
 	color: silver;
 }
-
-/*
-a {
-
+.MainMenuLink:visited {
+	color: white;	
 }
-a.visited {
+
+
+.ExperienceDuty:hover {
+	transition: 0.5s linear all;
 	color: black;
+	font-style: italic;
+	background-color: rgba(255,255,255, .3);
+	padding-left: 50px;
+	padding-right: 50px;
+	cursor: pointer;
 }
-*/
 
+.TwoColumns {
+   -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
 
-
+.ThreeColumns {
+   -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
 
 .TopBorder {
 	border-top: 1px solid white;
@@ -91,12 +113,12 @@ a.visited {
 
 .SectionContent {
 	width: 100%;
-	background-color: rgba(255,255,255, .7);
+	background-color: rgba(255,255,255, .8);
 	overflow: hidden;
 }
 
 .ContentPad {
-	padding: 10px;
+	padding: 0px 25px 25px 25px;
 }
 
 .Hidden {
@@ -106,6 +128,7 @@ a.visited {
 .center {
 	text-align: center;
 }
+
 
 .videothumb {
 	width: 33.33%;

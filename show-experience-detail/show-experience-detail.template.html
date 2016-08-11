@@ -1,19 +1,21 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
 
-		<p>{{$ctrl.experience.company}}</p>
+		<h4>{{$ctrl.experience.company}}</h4>
 		<ul>
 			<li>{{$ctrl.experience.title}}</li>
 			<li>{{$ctrl.experience.daterange}}</li>
 		</ul>
 
-		<ul ng-repeat="duty in $ctrl.experience.duties">
-			<li>{{duty}}</li>
+		<h4>Key Technologies</h4>
+
+		<ul>
+			<li ng-repeat="keytech in $ctrl.experience.keytech">{{keytech}}</li>
 		</ul>
-		Key Technologies<br>
-		<ul ng-repeat="keytech in $ctrl.experience.keytech">
-			<li>{{keytech}}</li>
-		</ul>
+
+		<div ng-repeat="duty in $ctrl.experience.duties" class="ExperienceDuty">
+			<p>{{duty}}</p>
+		</div>
 
 	</div>
 </div>

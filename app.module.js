@@ -5,6 +5,7 @@ angular.module('evikjamesApp', [
 	'core',
 	'ngAnimate',
 	'ngRoute',
+	'mainMenu',
 	'showExperience',
 	'showExperienceDetail',
 	'showProfile',

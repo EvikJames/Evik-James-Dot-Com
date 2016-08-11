@@ -1,4 +1,5 @@
 'use strict';
+
 // extend the module - define the component
 angular.module('showSkills').component('showSkills', {
 
