@@ -1,6 +1,7 @@
 html {
        overflow-y: scroll;
 }
+
 body {
   	background: url("background-01.jpg") top left repeat fixed;
   	background-size: 100%;
@@ -37,12 +38,12 @@ a:visited {
 	font-family: 'Passion One', cursive;
 	background-color: rgba(255,255,255,.95);	
 	/* line-height: 150%; */
-	font-size: 2em;
+	font-size: 3em;
 	padding: 0 10px;
 	cursor: pointer;
 	text-transform: uppercase;
 	border-bottom: 1px solid white;
-	text-shadow: 3px 3px 3px GRAY;
+	text-shadow: 1px 1px 1px GRAY;
 }
 .SectionHead:hover {
 	transition: 0.5s linear all;
@@ -128,6 +129,32 @@ a:visited {
 .center {
 	text-align: center;
 }
+
+.SkillsTable {
+	width: 100%;
+	border-collapse:collapse;
+}
+
+.SkillsHeadRow {
+	font-weight: bold;
+	background-color: rgba(255,255,255, .9);
+}
+
+tr:hover {
+	transition: 0.5s linear all;
+	background-color: rgba(255,255,255, .5);
+	font-style: italic;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+td {
+	padding: 5px;
+	border-bottom: 1px solid #000;
+}
+
+
+
 
 
 .videothumb {

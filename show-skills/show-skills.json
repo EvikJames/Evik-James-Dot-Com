@@ -1,33 +1,79 @@
 [
 	{
 		"skillid": 1,
-		"skilltype": "Front End Development",
-		"skilly": [
-			"Javascript",
-			"jQuery",
-			"HTML",
-			"CSS"
-		]
+		"skillname": "JavaScript",
+		"experience": 16,
+		"level": 5
+	},
+
+	{
+		"skillid": 1,
+		"skillname": "jQuery",
+		"experience": 5,
+		"level": 5
+	},
+
+	{
+		"skillid": 1,
+		"skillname": "AngularJS",
+		"experience": 1,
+		"level": 3
+	},
+
+	{
+		"skillid": 1,
+		"skillname": "React",
+		"experience": 1,
+		"level": 2
 	},
 
 	{
 		"skillid": 2,
-		"skilltype": "Back End Development",
-		"PHP": [
-			"3 years",
-			"6 years",
-			"9 years"
-		]
+		"skillname": "ColdFusion",
+		"experience": 18,
+		"level": 5
+	},
+
+	{
+		"skillid": 2,
+		"skillname": "PHP",
+		"experience": 3,
+		"level": 3
+	},
+
+	{
+		"skillid": 2,
+		"skillname": "Java",
+		"experience": 3,
+		"level": 2
 	},
 
 	{
 		"skillid": 3,
-		"skilltype": "Databases",
-		"SQL Server": [
-			"1 years",
-			"2 years",
-			"3 years"
-		]
+		"skillname": "SQL Server",
+		"experience": 16,
+		"level": 4
+	},
+
+	{
+		"skillid": 3,
+		"skillname": "Access",
+		"experience": 5,
+		"level": 3
+	},
+
+	{
+		"skillid": 3,
+		"skillname": "PostGres",
+		"experience": 1,
+		"level": 3
+	},
+
+	{
+		"skillid": 3,
+		"skillname": "MySQL",
+		"experience": 1,
+		"level": 3
 	}
 
 ]

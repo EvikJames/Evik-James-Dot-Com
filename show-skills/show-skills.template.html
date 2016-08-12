@@ -1,34 +1,53 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
 
-		<p>This is my stuff:</p>
+		<p>As a full stack web developer, I've encountered many technologies. Here's a list of technologies that I've learned and mastered. Of course, each day brings new challenges
+		and mastery seems elusive.</p>
 
-		<table>
-			<tr class="TableHead">
+		<table class="SkillsTable">
+
+			<!-- FRONT END HEADER -->
+			<tr class="SkillsHeadRow">
 				<td>Front End Development</td>
 				<td align="center" width="125">Years Exp</td>
 				<td align="center" width="125">Skill Level (1-5)</td>
 			</tr>
-			<tr>
-				<td>JavaScript (native)</td>
-				<td align="center"></td>
-				<td align="center">5</td>
+
+			<!-- FRONT END DATA -->
+			<tr ng-repeat="skill in $ctrl.techskills | filter:{skillid:1}" class="">
+				<td>{{skill.skillname}}</td>
+				<td align="center">{{skill.experience}}</td>
+				<td align="center"><span ng-bind-html="{{skill.level | checkmark}}"></span></td>
 			</tr>
-			<tr>
-				<td>JQuery</td>
-				<td align="center">321</td>
-				<td align="center">4</td>
+
+			<!-- BACK END HEADER -->
+			<tr class="SkillsHeadRow">
+				<td>Back End Development</td>
+				<td align="center" width="125">Years Exp</td>
+				<td align="center" width="125">Skill Level (1-5)</td>
 			</tr>
-			<tr>
-				<td>AngularJS</td>
-				<td align="center">1</td>
-				<td align="center">3</td>
+
+			<!-- BACK END DATA -->
+			<tr ng-repeat="skill in $ctrl.techskills | filter:{skillid:2}">
+				<td>{{skill.skillname}}</td>
+				<td align="center">{{skill.experience}}</td>
+				<td align="center">{{skill.level}}</td>
 			</tr>
-			<tr>
-				<td>Bootstrap</td>
-				<td align="center">3</td>
-				<td align="center">5</td>
+
+			<!-- DATABASE HEADER -->
+			<tr class="SkillsHeadRow">
+				<td>Database</td>
+				<td align="center" width="125">Years Exp</td>
+				<td align="center" width="125">Skill Level (1-5)</td>
 			</tr>
+
+			<!-- DATABASE DATA -->
+			<tr ng-repeat="skill in $ctrl.techskills | filter:{skillid:3}">
+				<td>{{skill.skillname}}</td>
+				<td align="center">{{skill.experience}}</td>
+				<td align="center">{{skill.level}}</td>
+			</tr>
+
 		</table>
 
 		<!--
