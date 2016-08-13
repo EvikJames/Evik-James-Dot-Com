@@ -1,8 +1,8 @@
 <div class="SectionContent BottomBorder">
 	<div class="ContentPad">
 
-		<p>As a full stack web developer, I've encountered many technologies. Here's a list of technologies that I've learned and mastered. Of course, each day brings new challenges
-		and mastery seems elusive.</p>
+		<p>As a full stack web developer, I've encountered many technologies and tools. 
+			Here's a semi-comprehensive list of technologies that I've encountered, learned, and mastered - to one degree or another. Of course, each day introduces new techniques and knowledge and mastery seems elusive.</p>
 
 		<table class="SkillsTable">
 
@@ -10,60 +10,60 @@
 			<tr class="SkillsHeadRow">
 				<td>Front End Development</td>
 				<td align="center" width="125">Years Exp</td>
-				<td align="center" width="125">Skill Level (1-5)</td>
+				<td align="center" width="125">Skill Level</td>
 			</tr>
 
 			<!-- FRONT END DATA -->
 			<tr ng-repeat="skill in $ctrl.techskills | filter:{skillid:1}" class="">
 				<td>{{skill.skillname}}</td>
 				<td align="center">{{skill.experience}}</td>
-				<td align="center"><span ng-bind-html="{{skill.level | checkmark}}"></span></td>
+				<td align="center"><span ng-bind-html="skill.level | stars"></span></td>
+				
 			</tr>
 
 			<!-- BACK END HEADER -->
 			<tr class="SkillsHeadRow">
 				<td>Back End Development</td>
 				<td align="center" width="125">Years Exp</td>
-				<td align="center" width="125">Skill Level (1-5)</td>
+				<td align="center" width="125">Skill Level</td>
 			</tr>
 
 			<!-- BACK END DATA -->
 			<tr ng-repeat="skill in $ctrl.techskills | filter:{skillid:2}">
 				<td>{{skill.skillname}}</td>
 				<td align="center">{{skill.experience}}</td>
-				<td align="center">{{skill.level}}</td>
+				<td align="center"><span ng-bind-html="skill.level | stars"></span></td>
 			</tr>
 
 			<!-- DATABASE HEADER -->
 			<tr class="SkillsHeadRow">
-				<td>Database</td>
+				<td>Database Development</td>
 				<td align="center" width="125">Years Exp</td>
-				<td align="center" width="125">Skill Level (1-5)</td>
+				<td align="center" width="125">Skill Level</td>
 			</tr>
 
 			<!-- DATABASE DATA -->
 			<tr ng-repeat="skill in $ctrl.techskills | filter:{skillid:3}">
 				<td>{{skill.skillname}}</td>
 				<td align="center">{{skill.experience}}</td>
-				<td align="center">{{skill.level}}</td>
+				<td align="center"><span ng-bind-html="skill.level | stars"></span></td>
+			</tr>
+
+			<!-- TOOLS HEADER -->
+			<tr class="SkillsHeadRow">
+				<td>Development Tools</td>
+				<td align="center" width="125">Years Exp</td>
+				<td align="center" width="125">Skill Level</td>
+			</tr>
+
+			<!-- TOOLS DATA -->
+			<tr ng-repeat="skill in $ctrl.techskills | filter:{skillid:4}">
+				<td>{{skill.skillname}}</td>
+				<td align="center">{{skill.experience}}</td>
+				<td align="center"><span ng-bind-html="skill.level | stars"></span></td>
 			</tr>
 
 		</table>
-
-		<!--
-		<table>
-			<tr ng-repeat="skill in $ctrl.techskills">
-				<th colspan="3">{{skill.skilltype}}</th>
-			</tr>
-		</table>
-
-		<ul ng-repeat="techskills in $ctrl.techskills">
-			<li>{{techskills.skilltype}}</li>
-			<ul ng-repeat="skills in $ctrl.techskills.skilly">
-				{{skills}}
-			</ul>	
-		</ul>
-		-->
 
 	</div>
 </div>

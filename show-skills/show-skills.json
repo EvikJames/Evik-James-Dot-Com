@@ -1,6 +1,20 @@
 [
 	{
 		"skillid": 1,
+		"skillname": "HTML",
+		"experience": 20,
+		"level": 5
+	},
+
+	{
+		"skillid": 1,
+		"skillname": "CSS",
+		"experience": 18,
+		"level": 4
+	},
+
+	{
+		"skillid": 1,
 		"skillname": "JavaScript",
 		"experience": 16,
 		"level": 5
@@ -26,6 +40,7 @@
 		"experience": 1,
 		"level": 2
 	},
+
 
 	{
 		"skillid": 2,
@@ -73,6 +88,27 @@
 		"skillid": 3,
 		"skillname": "MySQL",
 		"experience": 1,
+		"level": 3
+	},
+
+	{
+		"skillid": 4,
+		"skillname": "Git",
+		"experience": 3,
+		"level": 4
+	},
+
+	{
+		"skillid": 4,
+		"skillname": "Sublime Text 2",
+		"experience": 3,
+		"level": 4
+	},
+
+	{
+		"skillid": 4,
+		"skillname": "Grunt",
+		"experience": 2,
 		"level": 3
 	}
 
