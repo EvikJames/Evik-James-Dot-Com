@@ -1,9 +1,12 @@
 'use strict';
 
-angular.
-  module('showVideo').component('showVideo', {
+// extend the module - define the component
+angular.module('showVideo').component('showVideo', {
+
     templateUrl: 'show-video/show-video.template.html',
+
     controller: function ShowVideoController() {
+
       this.videos = [
 
           {
@@ -36,24 +39,9 @@ angular.
             videoid: 'LhJgO2LYDcU'
           }
 
-      ];
+    ];
 
+  }
 
-    }
+});
 
-  });
-
-
-/*
-    .filter('videoUrl', videoUrl);
-
-      videoUrl.$inject = ['$sce'];
-
-      function videoUrl($sce) {
-        return function(videoid) {
-          if (!videoid) return;
-          return $sce.trustAsResourceUrl('http://www.youtube.com/embed/' + videoid);
-        }
-      }
-
-      */

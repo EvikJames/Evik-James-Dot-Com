@@ -15,6 +15,9 @@ angular.module('evikjamesApp').config(['$locationProvider', '$routeProvider',
         when('/experience-detail/:experienceid', {
           template: '<show-experience-detail></show-experience-detail>'
         }).
+        when('/photos', {
+          template: '<photo-gallery></photo-gallery>'
+        }).
         when('/video', {
           template: '<show-video></show-video>'
         }).
