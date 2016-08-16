@@ -22,6 +22,47 @@ a:visited {
 	color: blue;
 }
 
+
+
+
+.gallerylist {
+	text-align: center;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallerylistitem {
+	float: left;		
+}
+
+.gallerythumb {
+	width: 40px;
+	padding: 2px;
+}
+
+.gallerybig {
+	width: 100%;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #PageWrapper {
 	color: black;
 	margin-left: auto;

@@ -18,22 +18,6 @@ angular.module('showSkills').component('showSkills', {
 
         self.techskills = response.data;
 
-        console.log(self.techskills);
-
-          /*
-
-        for (var i = 0; i < self.skills.length; i++) {
-
-          // var experienceid = self.experiences[i]["experienceid"];
-
-          if (skill == $routeParams.experienceid) {
-            self.experience = response.data[i];
-            break;
-          }
-
-        }
-          */
-
       });
 
     }

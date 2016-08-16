@@ -1,17 +1,29 @@
 <div class="SectionContent BottomBorder">
   <div class="ContentPad">
 
-      <div ng-repeat="i in [1,2,3,4,5] track by $index">
-        do something number {{n}}
-      </div>
+    <!-- LOOP THROUGH THE GALLERY ARRAY -->
+    <div ng-repeat="theme in $ctrl.gallery" class="phone-list-item gallerygroup">
 
 
-    <div ng-repeat="photo in $ctrl.photos" class="phone-list-item">
+      <h4>{{theme.theme}}</h4>
 
+      <ul class="gallerylist">
 
+        <!-- LOOP THROUGH A GALLERY THEME -->
+        <li class="gallerylistitem" ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12] track by $index">  <a href="" ng-click="$ctrl.showImage(theme.themeid, i)">
+            <img class="gallerythumb"
+              ng-src="gallery/{{theme.themeid}}_{{i}}_thumb.jpg" 
+              >
+        </li></a>
 
-      <img ng-src="gallery/{{photo}}_01.jpg">
+      </ul>
 
+      <!-- CREATE THE SPACE FOR THE FULL PHOTO -->
+      <div class="gallerybig" >
+
+      </div> 
+
+      <hr>
 
     </div>
 
