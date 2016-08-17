@@ -14,7 +14,15 @@ angular.module('photoGallery').component('photoGallery', {
 
             self.bigimage = "";
 
-            self.showImage = function(themeid, i, galleryIdx) {
+
+            self.displayContent = function(firstIdx, secondIdx) {
+
+                console.log(firstIdx);
+                console.log(secondIdx);
+
+            };
+
+            self.showImage = function(themeid, i) {
 
                 var ThisImage = element(by.id('jsBigImage'+ galleryIdx));
 

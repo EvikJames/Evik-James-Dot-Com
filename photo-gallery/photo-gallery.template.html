@@ -9,11 +9,11 @@
       <ul class="gallerylist">
 
         <!-- LOOP THROUGH A GALLERY THEME -->
-        <li class="gallerylistitem" ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12] track by $index">  <a href="" ng-click="$ctrl.showImage(theme.themeid, i)">
-            <img class="gallerythumb"
-              ng-src="gallery/{{theme.themeid}}_{{i}}_thumb.jpg" 
-              >
-        </li></a>
+        <li class="gallerylistitem" ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12] track by $index">
+          <a href="" ng-click="$ctrl.showImage(theme.themeid, i)">
+            <img class="gallerythumb" ng-src="gallery/{{theme.themeid}}_{{i}}_thumb.jpg">
+          </a>  
+        </li>
 
       </ul>
 
@@ -25,6 +25,26 @@
       <hr>
 
     </div>
+
+
+    <!-- LOOP THROUGH A GALLERY THEME -->
+    <div class="title" ng-repeat="i in [1,2,3]">
+
+      <p>This is section {{i}}</p>
+
+      <ul>
+          <li ng-repeat="j in [1,2,3]">
+            <a href="" ng-click="$ctrl.displayContent(i, j)">section {{i}} - link {{j}}</a>
+          </li>
+      </ul> 
+
+      <div class="results"></div> 
+
+    </div> 
+
+
+
+
 
   </div>
 </div>
