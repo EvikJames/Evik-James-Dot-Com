@@ -1,11 +1,10 @@
 <div class="SectionContent BottomBorder">
   <div class="ContentPad">
 
-    <!-- LOOP THROUGH THE GALLERY ARRAY -->
-    <div ng-repeat="theme in $ctrl.gallery" class="phone-list-item gallerygroup">
+    <!-- LOOP THROUGH THE GALLERY THEME ARRAY -->
+    <div ng-repeat="theme in $ctrl.gallery" class="gallerygroup">
 
-
-      <h4>{{theme.theme}}</h4>
+      <h4>{{theme.theme}} - Gallery {{$index}}</h4>
 
       <ul class="gallerylist">
 
@@ -19,8 +18,8 @@
       </ul>
 
       <!-- CREATE THE SPACE FOR THE FULL PHOTO -->
-      <div class="gallerybig" >
-
+      <div class="gallerybig">
+        <img class="BigImage" ng-src="{{$ctrl.bigimage}}">
       </div> 
 
       <hr>

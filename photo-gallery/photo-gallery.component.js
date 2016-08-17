@@ -12,10 +12,15 @@ angular.module('photoGallery').component('photoGallery', {
 
             var self = this;
 
-            self.showImage = function(themeid, i) {
+            self.bigimage = "";
 
-                console.log(themeid);
-                console.log(i);
+            self.showImage = function(themeid, i, galleryIdx) {
+
+                var ThisImage = element(by.id('jsBigImage'+ galleryIdx));
+
+                var BigImageSRC = "gallery/" + themeid + "_" + i + ".jpg";
+
+                self.bigimage = BigImageSRC;
 
             };
 
