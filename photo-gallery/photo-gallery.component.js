@@ -12,23 +12,27 @@ angular.module('photoGallery').component('photoGallery', {
 
             var self = this;
 
-            self.bigimage = "";
-
+            self.results = [];
+            self.bigimage = [];
 
             self.displayContent = function(firstIdx, secondIdx) {
+
+                self.results = [];
+                self.results[firstIdx] = "lkasdf asdfasd fasdfasdf asdfj";
 
                 console.log(firstIdx);
                 console.log(secondIdx);
 
             };
 
-            self.showImage = function(themeid, i) {
+            self.showImage = function(themeid, firstIdx, secondIdx) {
 
-                var ThisImage = element(by.id('jsBigImage'+ galleryIdx));
+                var BigImageSRC = "gallery/" + themeid + "_" + secondIdx + ".jpg";
 
-                var BigImageSRC = "gallery/" + themeid + "_" + i + ".jpg";
+                self.bigimage = [];
+                self.bigimage[firstIdx] = BigImageSRC;
 
-                self.bigimage = BigImageSRC;
+                // self.bigimage = BigImageSRC;
 
             };
 

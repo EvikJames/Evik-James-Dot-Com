@@ -19,7 +19,7 @@
 
       <!-- CREATE THE SPACE FOR THE FULL PHOTO -->
       <div class="gallerybig">
-        <img class="BigImage" ng-src="{{$ctrl.bigimage}}">
+        <img class="BigImage" ng-src="{{$ctrl.bigimage[i]}}">
       </div> 
 
       <hr>
@@ -38,7 +38,7 @@
           </li>
       </ul> 
 
-      <div class="results"></div> 
+      <div class="results" ng-bind="results[i]"></div> 
 
     </div> 
 
